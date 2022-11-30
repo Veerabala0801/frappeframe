@@ -55,3 +55,6 @@ class Visitors(Document):
 			frappe.throw('Invalid Pincode')
 		else:
 			self.pincode=self.pincode
+			#in validation
+			#let  see whats happen after commit
+
