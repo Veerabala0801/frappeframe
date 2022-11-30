@@ -36,7 +36,7 @@ class Visitors(Document):
 		self.pinstring = str(self.pincode)
 		
 		regex = "^[1-9]{1}[0-9]{2}\\s{0,1}[0-9]{3}$"
-
+#comments
 	# ^ represents the starting of the number.
     # [1-9]{1} represents the starting digit in the pin code ranging from 1 to 9.
     # [0-9]{2} represents the next two digits in the pin code ranging from 0 to 9.
