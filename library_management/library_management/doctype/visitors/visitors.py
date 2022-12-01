@@ -43,6 +43,7 @@ class Visitors(Document):
     # \\s{0, 1} represents the white space in the pin code that can occur once or never.
     # [0-9]{3} represents the last three digits in the pin code ranging from 0 to 9.
     # $ represents the ending of the number.
+	# new feature added
 
 		self.pattern=re.compile(regex)
 
