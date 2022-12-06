@@ -3,8 +3,6 @@
 
 import frappe
 from frappe.model.document import Document
-#email validation
-#from email_validator import validate_email, EmailNotValidError
 from frappe.utils import comma_and, get_link_to_form, has_gravatar, validate_email_address
 import re
 class Visitors(Document):
