@@ -3,21 +3,30 @@
  "allow_rename": 1,
  "autoname": "field:f_name",
  "creation": "2022-11-24 17:23:57.288998",
+ "default_email_template": "Goku",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "f_name",
+  "column_break_2",
   "l_name",
+  "section_break_4",
   "full_name",
   "mobile",
+  "column_break_7",
   "email",
+  "section_break_9",
   "book_details",
+  "data_11",
   "address",
   "pincode",
   "city",
   "state",
-  "gender"
+  "gender",
+  "v_image",
+  "v_friend",
+  "visitor_ff"
  ],
  "fields": [
   {
@@ -38,15 +47,17 @@
   {
    "fieldname": "full_name",
    "fieldtype": "Data",
+   "ignore_user_permissions": 1,
    "label": "Full Name",
-   "read_only": 1
+   "print_hide": 1,
+   "read_only": 1,
+   "unique": 1
   },
   {
    "fieldname": "mobile",
    "fieldtype": "Phone",
    "in_list_view": 1,
-   "label": "Mobile",
-   "reqd": 1
+   "label": "Mobile"
   },
   {
    "fieldname": "email",
@@ -66,7 +77,8 @@
    "fieldname": "address",
    "fieldtype": "Small Text",
    "label": "Address",
-   "reqd": 1
+   "reqd": 1,
+   "translatable": 1
   },
   {
    "fieldname": "pincode",
@@ -93,15 +105,55 @@
    "fieldtype": "Select",
    "label": "Gender",
    "options": "male\nfemale"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "data_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "v_image",
+   "fieldtype": "Image",
+   "label": "Image",
+   "options": "v_friend"
+  },
+  {
+   "fieldname": "v_friend",
+   "fieldtype": "Attach Image",
+   "label": "Visitors Friend"
+  },
+  {
+   "fieldname": "visitor_ff",
+   "fieldtype": "Link",
+   "label": "Vistors F",
+   "options": "Visitors"
   }
  ],
+ "image_field": "v_friend",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-11-28 16:36:37.549040",
+ "modified": "2022-12-02 16:43:21.482832",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Visitors",
+ "name_case": "Title Case",
  "naming_rule": "By fieldname",
+ "nsm_parent_field": "parent_visitors",
  "owner": "Administrator",
  "permissions": [
   {
@@ -117,7 +169,10 @@
    "write": 1
   }
  ],
- "sort_field": "modified",
+ "quick_entry": 1,
+ "search_fields": "l_name,email",
+ "show_name_in_global_search": 1,
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "full_name"
 }

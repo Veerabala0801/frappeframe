@@ -21,3 +21,8 @@
 
 // 	// }
 // );
+frappe.ui.form.on('Visitors', {
+	// refresh: function(frm) {
+
+	// }
+});

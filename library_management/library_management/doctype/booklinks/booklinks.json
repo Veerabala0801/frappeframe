@@ -1,6 +1,5 @@
 {
  "actions": [],
- "autoname": "autoincrement",
  "creation": "2022-11-24 17:26:41.499366",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -12,6 +11,7 @@
   {
    "fieldname": "bookl",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "bookLinks",
    "options": "Book"
   }
@@ -19,11 +19,10 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2022-11-24 17:31:40.380650",
+ "modified": "2022-12-01 15:29:40.425102",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Booklinks",
- "naming_rule": "Autoincrement",
  "owner": "Administrator",
  "permissions": [],
  "sort_field": "modified",
