@@ -4,12 +4,11 @@
 frappe.ui.form.on('Library Transaction', {
 	
 	refresh: function(frm) {
-		frm.set_query("full_name", function() {
-			return {
-				filters: [
-					["Library Membership","payment", "in", ["PAID"]]
-				]
-			}
+		frm.set_query("full_name", function() 
+		{
+
+			return {	filters: [	["Library Membership","payment", "in", ["PAID"]]	]	}
+		
 		});
 	}
 });
