@@ -10,28 +10,33 @@ from frappe.model.docstatus import DocStatus
 
 
 class LibraryTransaction(Document):
+
 	def validate(self):
 		self.before_submit()
-		self.paid_membership()
+		#self.paid_membership()
 		#self.validate_issue()
 		#self.validate_return()
 		self.validate_maximum_limit()
 		self.validate_membership()
+		self.available_stocks()
+	def available_stocks(self):
+		pass
 
+    
 	
-	def paid_membership(self):
-		payment = frappe.db.get_value("Library Membership", "payment")
-		#print(paid)
-		if payment == 0:
-			frappe.throw("He didn't paid for membership")
+
 		
-	
 	def before_submit(self):
-		if self.type == "Issue":
+
+		# if self.paid == "UNPAID":
+		# 	frappe.throw("he didnt paid for membership")
+		# else:
+		# 	pass 
+
+		if self.type == "Issue":  
 
 			#self.validate_issue()
-			article = frappe.get_doc("Article",self.article,self.stocks)
-			article.stocks = article.stocks
+			article = frappe.get_doc("Article",self.article)
 			if article.status == "Issued":
 				frappe.throw("Article is issued to other mem")
 			
