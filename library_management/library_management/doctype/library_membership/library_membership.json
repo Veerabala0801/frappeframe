@@ -11,7 +11,7 @@
   "full_name",
   "from_date",
   "to_date",
-  "paid",
+  "payment",
   "amended_from"
  ],
  "fields": [
@@ -34,12 +34,6 @@
    "label": "To Date"
   },
   {
-   "default": "0",
-   "fieldname": "paid",
-   "fieldtype": "Check",
-   "label": "Paid"
-  },
-  {
    "fieldname": "amended_from",
    "fieldtype": "Link",
    "label": "Amended From",
@@ -55,12 +49,19 @@
    "label": "Library Member",
    "options": "Library Member",
    "reqd": 1
+  },
+  {
+   "default": "UNPAID",
+   "fieldname": "payment",
+   "fieldtype": "Select",
+   "label": "Payment",
+   "options": "PAID\nUNPAID"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2022-12-06 12:58:53.855572",
+ "modified": "2022-12-07 11:04:55.838408",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Library Membership",
