@@ -75,14 +75,15 @@
    "default": "3",
    "fieldname": "stocks",
    "fieldtype": "Int",
-   "label": "Stocks"
+   "label": "Stocks",
+   "non_negative": 1
   }
  ],
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "is_published_field": "published",
  "links": [],
- "modified": "2022-12-07 10:49:46.569989",
+ "modified": "2022-12-07 17:28:41.763061",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Article",

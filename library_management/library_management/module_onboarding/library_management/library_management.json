@@ -1,0 +1,38 @@
+{
+ "allow_roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Librarian"
+  }
+ ],
+ "creation": "2022-12-08 17:43:56.095477",
+ "docstatus": 0,
+ "doctype": "Module Onboarding",
+ "documentation_url": "https://google.com/",
+ "idx": 0,
+ "is_complete": 0,
+ "modified": "2022-12-08 18:22:05.370456",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Library Management",
+ "owner": "Administrator",
+ "steps": [
+  {
+   "step": "Adding Article"
+  },
+  {
+   "step": "Library Member"
+  },
+  {
+   "step": "Library Membership"
+  },
+  {
+   "step": "Library Transaction"
+  }
+ ],
+ "subtitle": "Article | Library Member | Library Membership | Library Transaction",
+ "success_message": "success",
+ "title": "Library Management"
+}
