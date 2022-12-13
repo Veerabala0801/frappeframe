@@ -1,0 +1,20 @@
+{
+ "action": "Create Entry",
+ "creation": "2022-12-08 17:43:20.124315",
+ "description": "hey now we are in the Library Member area here we add the member for the Library with a basic details of the person \nif you want to get a loan for the book you need to have a membership you can see the details in the next step",
+ "docstatus": 0,
+ "doctype": "Onboarding Step",
+ "idx": 0,
+ "is_complete": 0,
+ "is_single": 0,
+ "is_skipped": 0,
+ "modified": "2022-12-08 18:02:55.118215",
+ "modified_by": "Administrator",
+ "name": "Library Member",
+ "owner": "Administrator",
+ "reference_document": "Library Member",
+ "show_form_tour": 0,
+ "show_full_form": 0,
+ "title": "Adding Library Member",
+ "validate_action": 1
+}

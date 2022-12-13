@@ -1,0 +1,20 @@
+{
+ "action": "Create Entry",
+ "creation": "2022-12-08 18:17:44.718097",
+ "description": "It is the library Membership area were you can promote normal user to Paid user\nOnly the library member is available for the Membership",
+ "docstatus": 0,
+ "doctype": "Onboarding Step",
+ "idx": 0,
+ "is_complete": 0,
+ "is_single": 0,
+ "is_skipped": 0,
+ "modified": "2022-12-08 18:17:44.718097",
+ "modified_by": "Administrator",
+ "name": "Library Membership",
+ "owner": "Administrator",
+ "reference_document": "Library Membership",
+ "show_form_tour": 0,
+ "show_full_form": 0,
+ "title": "Library Membership",
+ "validate_action": 1
+}

@@ -64,15 +64,16 @@
   {
    "fieldname": "route",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Route"
   },
   {
    "fieldname": "published",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "Published"
   },
   {
-   "default": "3",
    "fieldname": "stocks",
    "fieldtype": "Int",
    "label": "Stocks"
@@ -82,7 +83,7 @@
  "index_web_pages_for_search": 1,
  "is_published_field": "published",
  "links": [],
- "modified": "2022-12-07 10:49:46.569989",
+ "modified": "2022-12-09 10:56:13.533180",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Article",
