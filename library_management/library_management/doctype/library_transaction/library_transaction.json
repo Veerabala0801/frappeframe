@@ -11,7 +11,8 @@
   "full_name",
   "type",
   "date",
-  "amended_from"
+  "amended_from",
+  "tables2"
  ],
  "fields": [
   {
@@ -46,12 +47,17 @@
    "label": "Library  Membership",
    "options": "Library Membership",
    "unique": 1
+  },
+  {
+   "fieldname": "tables2",
+   "fieldtype": "HTML",
+   "label": "Table2",
+   "options": "\n\n\n\n\n{%- for row in data-%}\n{%-endfor-%}<table><tbody><tr>\n<th>Article</th>\n<th>Mem</th>\n<th>Row</th>\n</tr><tr>\n<th>{{row.article}}</th>\n<th>{{row.full_name}}</th>\n<th>{{row.type}}</th>\n</tr></tbody></table>"
   }
  ],
- "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2022-12-07 12:41:12.588893",
+ "modified": "2022-12-15 17:36:28.817426",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Library Transaction",
