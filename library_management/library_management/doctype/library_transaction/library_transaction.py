@@ -1,7 +1,10 @@
 # Copyright (c) 2022, veerabala and contributors
 # For license information, please see license.txt
 
+# from re import template
 import frappe
+# import jinja2
+from jinja2 import Environment,PackageLoader,select_autoescape
 from frappe.model.document import Document
 from frappe.model.docstatus import DocStatus
 
@@ -12,7 +15,15 @@ class LibraryTransaction(Document):
 		self.before_submit()
 		self.validate_maximum_limit()
 		self.validate_membership()
-    
+		# self.html_tabvalue()
+	
+	# def html_tabvalue(self):
+	# 	env=jinja2.Environment()
+	# 	data1 = frappe.db.sql(""" SELECT article,full_name,type FROM `tabLibrary Transaction`""")
+	# 	data = list(data1)
+	# 	template = env.get_template("article_report.html")
+	# 	template.render(data)
+
 	def before_submit(self):
 		
 		if self.type == "Issue":
@@ -51,4 +62,7 @@ class LibraryTransaction(Document):
 		)
 
 		if full_name:
-			frappe.throw("The member is not a valid member")     
+			frappe.throw("The member is not a valid member")
+
+
+
