@@ -1,7 +1,8 @@
+
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Lib Home</title>
+		{% block title %}<title>Lib Home</title>{% endblock%}
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<style>
 			h1 {
@@ -15,62 +16,62 @@
 				text-align:justify;
 				color: #2f2d2d;
 			}
+
+            ul {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              overflow: hidden;
+              background-color: #333;
+            }
+            
+            li {
+              float: left;
+              border-right:1px solid #bbb;
+            }
+            
+            li:last-child {
+              border-right: none;
+            }
+            
+            li a {
+              display: block;
+              color: white;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+            }
+            
+            li a:hover:not(.active) {
+              background-color: #111;
+            }
+            
+            .active {
+              background-color: #358444;
+            }
+
+            
 		</style>
 	</head>
-	<body>
-		<h1>Library Management</h1>
-        <div class="topnav">
-            <a class="active" href="#home">Home</a>
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
-          </div> 
-		<p>Library management is a sub-discipline of institutional management that focuses on specific issues faced by libraries and library management professionals. Library management encompasses normal managerial tasks, as well as intellectual freedom and fundraising responsibilities.</p>
-	</body>
-    <!DOCTYPE html>
-    <html>
-    <head>
-        <title>HTML Table Generator</title> 
-        <style>
-            table {
-                border:1px solid #b3adad;
-                border-collapse:collapse;
-                padding:5px;
-            }
-            table th {
-                border:1px solid #b3adad;
-                padding:5px;
-                background: #f0f0f0;
-                color: #313030;
-            }
-            table td {
-                border:1px solid #b3adad;
-                text-align:center;
-                padding:5px;
-                background: #ffffff;
-                color: #313030;
-            }
-        </style>
-    </head>
-    <body>
-        <table>
-            <thead>
-                <tr>
-                    <th>Article<br></th>
-                    <th>Member<br></th>
-                    <th>Issue<br></th>
-                </tr>
-            </thead>
-            <tbody>
-                {%- for row in items -%}
-                <tr>
-                    <td>{{row.article}} <br></td>
-                    <td>{{row.full_name}} <br></td>
-                    <td>{{row.type}} <br></td>
-                </tr>
-                {%- endfor -%}
-            </tbody>
-        </table>
-    </body>
-    </html>
+	<body style="background: rgba(191, 246, 207, 0.972)">
+        <div id="header">
+            <h1>Library Management</h1>
+   
+            <body>
+            
+            <ul>
+                <li><a class="active" href="test.html">Home</a></li>
+                <li><a href="libtreport.html">Transaction Report</a></li>
+                <li><a href="libmreport.html">Library Members Report</a></li>
+                <li><a href="libmsreport">Library Membership Report</a></li>
+            </ul>
+        </div>
+        {% block content %} 
+		<p>&emsp;&emsp;Library management is a sub-discipline of institutional management that focuses on 
+            specific issues faced by libraries and library management professionals. Library management encompasses normal
+             managerial tasks, as well as intellectual freedom and fundraising responsibilities.</p>
+       <marquee behavior = "alternate" scrollamount="1" ><center>     <img src="img/libraryimg.jpg" alt="lib img" width="1050" height="400"></center></marquee>
+             {% endblock %}     
+            </body>
 </html>
+
