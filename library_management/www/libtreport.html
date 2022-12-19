@@ -1,0 +1,34 @@
+{% extends "library_management/www/test.html" %}
+
+{% block title %}<title>Lib Transaction Report</title>{% endblock%}
+
+{% block content %} 
+<p>&emsp;&emsp;The Transaction Detail Report gives a breakdown of transactions entered on work orders 
+    for a specified reporting period and includes information such as the work order description, transaction description, quantity, and unit cost. </p>
+  <h3> Library Transaction Report </h3>
+  
+<center>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Article<br></th>
+                <th>Member<br></th>
+                <th>Issue<br></th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            {%- for row in items -%}
+            <tr>
+                <td>{{row.article}} <br></td>
+                <td>{{row.full_name}} <br></td>
+                <td>{{row.type}} <br></td>
+                <td><button type="button" class="btn btn-danger btn-sm">Delete Record</button></td>
+            </tr>
+           {%- endfor -%}
+        </tbody>
+    </table> 
+</center>
+{% endblock %} 
+
+    
