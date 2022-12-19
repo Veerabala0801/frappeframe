@@ -49,16 +49,19 @@
             .active {
               background-color: #358444;
             }
-
-            
 		</style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	</head>
-	<body style="background: rgba(191, 246, 207, 0.972)">
+	<body class="container"  style="background: rgba(191, 246, 207, 0.972)">
         <div id="header">
-            <h1>Library Management</h1>
-   
-            <body>
-            
+            <h1>Library Management</h1>  
+            <body>           
             <ul>
                 <li><a class="active" href="test.html">Home</a></li>
                 <li><a href="libtreport.html">Transaction Report</a></li>
@@ -66,12 +69,28 @@
                 <li><a href="libmsreport">Library Membership Report</a></li>
             </ul>
         </div>
+
+
         {% block content %} 
-		<p>&emsp;&emsp;Library management is a sub-discipline of institutional management that focuses on 
+		    <p class="jumbotron">&emsp;&emsp;Library management is a sub-discipline of institutional management that focuses on 
             specific issues faced by libraries and library management professionals. Library management encompasses normal
              managerial tasks, as well as intellectual freedom and fundraising responsibilities.</p>
-       <marquee behavior = "alternate" scrollamount="1" ><center>     <img src="img/libraryimg.jpg" alt="lib img" width="1050" height="400"></center></marquee>
-             {% endblock %}     
+        <marquee behavior = "alternate" scrollamount="1" ><center>     <img src="img/libraryimg.jpg" alt="lib img" width="1050" height="400"></center></marquee>
+        {% endblock %}   
+             
+             
             </body>
+            <footer>
+              <div class=>
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h3>About Us</h3>
+                    <h5>Lorem ipsum..</h5>      
+                    <h5>Lorem ipsum..</h5>
+                    <button class="btn btn-default btn-sm">Get in Touch</button>
+                  </div>
+                </div>
+              </div>
+            </footer>
 </html>
 
