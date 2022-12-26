@@ -1,0 +1,18 @@
+{% extends "library_management/www/test.html" %}
+
+{% block title %}<title>Add Members </title>{% endblock%}
+
+
+{% block content %} 
+<p>&emsp;&emsp;The Add Library member gives a breakdown of transactions entered on work orders 
+    for a specified reporting period and includes information such as the work order description, transaction description, quantity, and unit cost. </p>
+  <h3> Add Library Member </h3>
+
+  <form>
+    
+    <label for="fname">First name:</label><input type="text" id="fname" name="fname"><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname">
+  </form> 
+
+{% endblock%}
